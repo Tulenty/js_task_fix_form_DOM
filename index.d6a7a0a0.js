@@ -1,0 +1,2 @@
+function e(e){return e.replace(/([a-z])([A-Z])/g,"$1 $2")}document.querySelectorAll("form").forEach(function(t){t.querySelectorAll("input").forEach(function(t){var r,a=document.createElement("label");a.setAttribute("for",t.id),a.classList.add("field-label"),a.textContent=e(t.name).toUpperCase(),t.placeholder=e((r=t.name).charAt(0).toUpperCase()+r.slice(1)),t.parentNode.insertBefore(a,t)})});
+//# sourceMappingURL=index.d6a7a0a0.js.map
